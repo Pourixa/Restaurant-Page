@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+body {
+  background-color: #f39eb6;
+  display: grid;
+
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "nav nav nav" ". content ." ". content .";
+  height: 100vh;
+  width: 75vw;
+  transform: translateX(12.5%);
+}
+#content {
+  background-color: #f7f6d3;
+  min-height: calc(100vh - 5vh);
+  justify-self: center;
+  min-width: 75%;
+  max-width: 75%;
+  border-radius: 1rem;
+}
+
+header {
+  grid-area: nav;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem;
+}
+button {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #b8db80;
+  box-shadow: 0px 0px 5px black;
+  transition: background-color 0.5s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #a9c976;
+}
+button:active {
+  box-shadow: none;
+}
+.wrapper {
+  display: grid;
+  max-height: calc(100vh - 5vh);
+  justify-content: center;
+  align-items: center;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+.logo {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.logoimage {
+  max-width: 500px;
+  max-height: 500px;
+}
+.wrapper > div {
+  border-radius: 10px;
+}
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbc563;
+  min-width: 90%;
+  align-self: center;
+  justify-self: center;
+  min-height: 25%;
+}
+
+.hours {
+  padding: 5px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbc563;
+  align-self: center;
+  justify-self: center;
+  min-height: 25%;
+  min-width: 90%;
+  gap: 5px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbc563;
+  min-width: 90%;
+  align-self: center;
+  justify-self: center;
+  min-height: 25%;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbc563;
+  min-width: 90%;
+  align-self: center;
+  justify-self: center;
+  min-height: 25%;
+}
+
+.aboutT {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbc563;
+  max-width: 50%;
+  padding: 1rem;
+  align-self: center;
+  justify-self: center;
+  min-height: 25%;
+  margin-top: 3rem;
+}
